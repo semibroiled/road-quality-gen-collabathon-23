@@ -1,42 +1,65 @@
+"""This module is used to extract metadata from images"""
 from PIL import Image
-import exifread
+from pathlib import Path
+
+import os
 
 
+# Reach data in nested directory
+def get_file_paths(root_dir: Path = ".") -> list:
+    """This function returns a list of file paths for our images
+    Args:
+        root_dir (str, optional): Input is the root directory where we
+        are currently working in. Defaults to ".".
 
-def extract_metadata(image_path):
+    Returns:
+        list: The function returns a list with the relevant file paths
+        from the Image folder. It looks for .jpeg files in
+        the directories
+    """
+    # Empty List to store all filepaths
+    file_paths = []
+
+    # Recursively get all files from current working directory
+    for root, dirs, files in os.walk(root_dir):
+        for file in files:
+            if ".jpeg" in file:
+                # Append filepaths to empty list
+                file_paths.append(os.path.join(root, file))
+
+    return file_paths
+
+
+def extract_metadata(image_path: Path):
+    """_summary_
+
+    Args:
+        image_path (Path): _description_
+    """
     # Open the image using Pillow
     with Image.open(image_path) as img:
         # Print image information
         print("Image Format:", img.format)
         print("Image Mode:", img.mode)
         print("Image Size:", img.size)
-       
 
         # Extract EXIF data
-        #36867: time and date
-        #271: phone-Marke
-        #272: phone-Model
-        #305: Software
-        #34853: Latitude bzw. Longitude
+        # 36867: time and date
+        # 271: phone-Marke
+        # 272: phone-Model
+        # 305: Software
+        # 34853: Latitude bzw. Longitude
         interesting_tags = [36867, 271, 272, 305, 34853]
         tag_names = {
-         36867: "Date and Time Taken",
-         271: "Camera Make",
-         272: "Camera Model",
-         305: "Software",
-         34853: "Latitude and Longtitude"
-       }
-
+            36867: "Date and Time Taken",
+            271: "Camera Make",
+            272: "Camera Model",
+            305: "Software",
+            34853: "Latitude and Longtitude",
+        }
 
         exif_data = img._getexif()
         if exif_data:
             for tag, value in exif_data.items():
-                 if tag in tag_names:
-                  print(f"{tag_names[tag]}: {value}")
-
-
-
-                
-if __name__ == "__main__":
-    image_path = "/Users/fatmashalaby/Documents/road-quality-gen-collabathon-23/src/lib/imaga_data_extractor/images/62774941-A965-4DC8-8376-B88627E3FA33.jpeg"
-    extract_metadata(image_path)
+                if tag in tag_names:
+                    print(f"{tag_names[tag]}: {value}")
