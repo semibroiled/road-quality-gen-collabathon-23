@@ -31,11 +31,11 @@ With out product, you would be able to take a photo of the damages. This will fe
 
 The prequisites are, that Docker needs to be installed on local computer and should be running
 
-1) Run `docker-compose up road_quality_app``
+1) Run `docker-compose up road_quality_app`
 
 2) Run `docker build -t road_quality_app . --no-cache`
 
-
+3) Run `docker road_quality_app`
 
 ### Runnin locally in a Virtual Environment
 

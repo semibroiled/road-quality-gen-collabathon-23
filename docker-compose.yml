@@ -10,3 +10,13 @@ services:
       - ./.env
     command: /bin/sh -c 'python main.py'
 
+  road_quality_app_2:
+    container_name: road_quality_app_2
+    build:
+      dockerfile: ./Dockerfile
+      context: ./
+    env_file:
+      - ./.env
+    command: /bin/sh -c 'python lib/image_data_extractor/metadata_extractor.py'
+
+  
