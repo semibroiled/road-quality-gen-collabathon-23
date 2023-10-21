@@ -11,6 +11,7 @@ def extract_metadata(image_path):
         print("Image Mode:", img.mode)
         print("Image Size:", img.size)
        
+       
 
         # Extract EXIF data
         #36867: time and date
@@ -18,13 +19,14 @@ def extract_metadata(image_path):
         #272: phone-Model
         #305: Software
         #34853: Latitude bzw. Longitude
-        interesting_tags = [36867, 271, 272, 305, 34853]
+        interesting_tags = [36867, 271, 272, 305, 34853, 282]
         tag_names = {
          36867: "Date and Time Taken",
          271: "Camera Make",
          272: "Camera Model",
          305: "Software",
-         34853: "Latitude and Longtitude"
+         34853: "Latitude and Longtitude",
+         282: "Pixels/inch"
        }
 
 
