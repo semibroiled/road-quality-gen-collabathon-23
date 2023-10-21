@@ -35,7 +35,7 @@ The prequisites are, that Docker needs to be installed on local computer and sho
 
 2) Run `docker build -t road_quality_app . --no-cache`
 
-3) Run `docker road_quality_app`
+3) Run `docker run road_quality_app`
 
 ### Runnin locally in a Virtual Environment
 
