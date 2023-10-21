@@ -31,7 +31,7 @@ def get_file_paths(root_dir: Path = ".") -> list[str]:
     return file_paths
 
 
-def extract_metadata(image_path: Path, data: Dict) -> Dict:
+def extract_metadata(image_path: Path) -> Dict:
     """
         Function to extract Metadata from images
 
@@ -42,6 +42,8 @@ def extract_metadata(image_path: Path, data: Dict) -> Dict:
         Dict: _description_
     """
 
+    # Initialize Dictionary for current Image
+    data = {}
     data["filename"] = image_path
 
     # Empty Dictionary
@@ -74,6 +76,6 @@ def extract_metadata(image_path: Path, data: Dict) -> Dict:
         if exif_data:
             for tag, value in exif_data.items():
                 if tag in tag_names:
-                    metadata[tag_names[tag]] = value
+                    data[tag_names[tag]] = value
 
-        return metadata
+        return data
