@@ -7,7 +7,7 @@ def main():
 
 
 if __name__ == "__main__":
-    metadata = {}  # Running dict
+    metadata_collector = {}  # Running dict
     print("Initialized Docker Container 🐳")
     print("Starting Program 🟢")
 
@@ -22,14 +22,14 @@ if __name__ == "__main__":
     try:
         print("Extracting Metadata ⛭⛭⛭")
         for index, file_path in enumerate(file_paths):
-            metadata["index"](extract_metadata(file_path))
+            metadata_collector["index"](extract_metadata(file_path))
         print("Extracted File Paths ✅")
     except:
         # TODO Logger and exception cather here
         print("Put a Logger here later. We got some errors 🤡")
         pass
 
-    print(metadata)
+    print(metadata_collector)
     main()
 
     print("Exiting code ❣️")
