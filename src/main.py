@@ -22,7 +22,8 @@ if __name__ == "__main__":
     try:
         print("Extracting Metadata ⛭⛭⛭")
         for index, file_path in enumerate(file_paths):
-            metadata_collector["index"](extract_metadata(file_path))
+            print(file_path)
+            metadata_collector[index]=extract_metadata(file_path)
         print("Extracted File Paths ✅")
     except:
         # TODO Logger and exception cather here
