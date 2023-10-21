@@ -1,24 +1,22 @@
 from PIL import Image
 import exifread
-import subprocess
-import pyheif
 
 
 def extract_metadata(image_path):
-    try:
-        heif_file = pyheif.read(image_path)
-        metadata = heif_file.metadata
+    # Open the image using Pillow
+    with Image.open(image_path) as img:
+        # Print image information
+        print("Image Format:", img.format)
+        print("Image Mode:", img.mode)
+        print("Image Size:", img.size)
 
-        for item in metadata:
-            if 'Exif' in item['type']:
-                exif_data = item['data']
-                # Process and print EXIF data as needed
-                print("EXIF Data:", exif_data)
-    except FileNotFoundError:
-        print(f"File not found: {image_path}")
-    except Exception as e:
-        print(f"An error occurred: {e}")
+        # Extract EXIF data
+        exif_data = img._getexif()
+        if exif_data:
+            for tag, value in exif_data.items():
+                tag_name = exifread.FIELD_TYPES[tag]
+                print(f"{tag_name} ({tag}): {value}")
 
 if __name__ == "__main__":
-    image_path = "/Users/fatmashalaby/Documents/road-quality-gen-collabathon-23/src/lib/imaga_data_extractor/images/62774941-A965-4DC8-8376-B88627E3FA33.heic"
+    image_path = "/Users/fatmashalaby/Documents/road-quality-gen-collabathon-23/src/lib/imaga_data_extractor/images/62774941-A965-4DC8-8376-B88627E3FA33.jpeg"
     extract_metadata(image_path)
