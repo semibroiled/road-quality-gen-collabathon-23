@@ -64,12 +64,12 @@ def extract_metadata(image_path: Path) -> Dict:
         # 34853: Latitude bzw. Longitude
         interesting_tags = [36867, 271, 272, 305, 34853, 282]
         tag_names = {
-            36867: "Date and Time Taken",
+            36867: "Datetime",
             271: "Camera Make",
             272: "Camera Model",
-            305: "Software",
+            305: "Firmware",
             34853: "Latitude and Longtitude",
-            282: "Pixels/inch",
+            282: "DPI",
         }
 
         exif_data = img._getexif()
