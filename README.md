@@ -50,6 +50,14 @@ All packages and relevant frameworks are downloaded in the `.venv` virtual envir
 
 You can activate this with `source .venv/bin/activate`
 
+## Tag_Names
+ "36867": "Date Taken",
+ "36868": "Time Taken",
+ "271": "Camera Make",
+ "272": "Camera Model",
+ "305": "Software"
+
+ 
 
 
 
