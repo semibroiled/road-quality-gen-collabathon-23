@@ -53,20 +53,22 @@ def extract_metadata(image_path: Path, data: Dict) -> Dict:
         print("Image Format:", img.format)
         print("Image Mode:", img.mode)
         print("Image Size:", img.size)
+       
 
         # Extract EXIF data
-        # 36867: time and date
-        # 271: phone-Marke
-        # 272: phone-Model
-        # 305: Software
-        # 34853: Latitude bzw. Longitude
-        interesting_tags = [36867, 271, 272, 305, 34853]
+        #36867: time and date
+        #271: phone-Marke
+        #272: phone-Model
+        #305: Software
+        #34853: Latitude bzw. Longitude
+        interesting_tags = [36867, 271, 272, 305, 34853, 282]
         tag_names = {
             36867: "Date and Time Taken",
             271: "Camera Make",
             272: "Camera Model",
             305: "Software",
             34853: "Latitude and Longtitude",
+            282: "Pixels/inch",
         }
 
         exif_data = img._getexif()
