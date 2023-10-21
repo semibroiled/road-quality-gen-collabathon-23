@@ -1,19 +1,20 @@
 """This module is used to extract metadata from images"""
 from PIL import Image
 from pathlib import Path
+from typing import Dict
 
 import os
 
 
 # Reach data in nested directory
-def get_file_paths(root_dir: Path = ".") -> list:
+def get_file_paths(root_dir: Path = ".") -> list[str]:
     """This function returns a list of file paths for our images
     Args:
         root_dir (str, optional): Input is the root directory where we
         are currently working in. Defaults to ".".
 
     Returns:
-        list: The function returns a list with the relevant file paths
+        list[str]: The function returns a list with the relevant file paths
         from the Image folder. It looks for .jpeg files in
         the directories
     """
@@ -30,12 +31,19 @@ def get_file_paths(root_dir: Path = ".") -> list:
     return file_paths
 
 
-def extract_metadata(image_path: Path):
-    """_summary_
+def extract_metadata(image_path: Path) -> Dict:
+    """
+        Function to extract Metadata from images
 
     Args:
         image_path (Path): _description_
+
+    Returns:
+        Dict: _description_
     """
+    # Empty Dictionary
+    metadata = {}
+
     # Open the image using Pillow
     with Image.open(image_path) as img:
         # Print image information
@@ -62,4 +70,6 @@ def extract_metadata(image_path: Path):
         if exif_data:
             for tag, value in exif_data.items():
                 if tag in tag_names:
-                    print(f"{tag_names[tag]}: {value}")
+                    metadata[tag_names[tag]] = value
+
+        return metadata
