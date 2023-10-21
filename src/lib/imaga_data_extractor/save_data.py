@@ -22,7 +22,7 @@ def flatten_dict(data: Dict) -> Dict:
         flattened_entry = {
             "ID": key,
             "filename": value["filename"],
-            "Location": value["Latitude and Lonitude"],
+            "Location": value["Latitude and Longitude"],
             "Datetime": value["Datetime"],
             "Camera Make": value["Camera Make"],
             "Camera Model": value["Camera Model"],
@@ -40,7 +40,7 @@ def save_as_json(data: Dict) -> None:
     """
     # Convert data to JSON string
     json_data = json.dumps(data, indent=4)
-
+    # TODO: Add logger!
     # Save JSON String to a file
     with open(f"./data/{cur_time}.json", "w") as json_file:
         json_file.write(json_data)
@@ -54,7 +54,7 @@ def save_as_csv(data: Dict, fieldnames: List[str]) -> None:
     """
     # Get Field names
     # TODO
-
+    #! ADD LOGGER!!!!
     # TODO: Flatten data
 
     # Save as CSV

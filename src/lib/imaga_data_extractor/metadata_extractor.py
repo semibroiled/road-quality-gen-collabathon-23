@@ -3,7 +3,18 @@ from PIL import Image
 from pathlib import Path
 from typing import Dict
 
-import os
+import os, sys
+
+root_directory_module = os.path.abspath(os.path.join(os.path.curdir))
+if root_directory_module in list(sys.path):
+    print(list(sys.path))
+    print(f"Project Directory {root_directory_module} is already in Path")
+    pass
+else:
+    print(f"Project Directory {root_directory_module} is added to Path 🧑‍💻")
+    sys.path.append(root_directory_module)
+
+# from utils.logger import logger
 
 
 # Reach data in nested directory
@@ -52,9 +63,9 @@ def extract_metadata(image_path: Path) -> Dict:
     # Open the image using Pillow
     with Image.open(image_path) as img:
         # Print image information
-        print("Image Format:", img.format)
-        print("Image Mode:", img.mode)
-        print("Image Size:", img.size)
+        # print("Image Format:", img.format)
+        # print("Image Mode:", img.mode)
+        # print("Image Size:", img.size)
 
         # Extract EXIF data
         # 36867: time and date

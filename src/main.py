@@ -1,6 +1,6 @@
 from lib.imaga_data_extractor.metadata_extractor import extract_metadata
 from lib.imaga_data_extractor.metadata_extractor import get_file_paths
-
+from lib.imaga_data_extractor.save_data import save_as_csv, save_as_json, flatten_dict
 
 def main():
     ...
@@ -30,7 +30,29 @@ if __name__ == "__main__":
         print("Put a Logger here later. We got some errors 🤡")
         pass
 
-    print(metadata_collector)
+    print(metadata_collector) #TODO: Remove later
     main()
 
+    # Save metadata as datasets
+    try:
+        print("Saving dataset as json ⛭⛭⛭")
+        save_as_json(metadata_collector)
+    
+    except:
+        # TODO Logger and exception cather here
+        print("Put a Logger here later. We got some errors 🤡")
+        pass
+        
+    print("Saved to a json file in Path(./data/) ✅")
+
+    try:
+        print("Saving dataset as csv ⛭⛭⛭")
+        save_as_csv(metadata_collector)
+    except:
+        # TODO Logger and exception cather here
+        print("Put a Logger here later. We got some errors 🤡")
+        pass
+    
+    print("Saved to a csv file in Path(./data/) ✅")
+    
     print("Exiting code ❣️")

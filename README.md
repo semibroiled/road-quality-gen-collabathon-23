@@ -5,8 +5,6 @@ Team 'the green amateurs' project for the Collabathon '23 challenge in Smart Cit
 
 Team Members:
 - Ravi Kumar
-- Hendrik
-- Lennart 
 - Doruk Altinkaya
 - Fatma Shalaby
 - Amitav Chris Mostafa
