@@ -27,7 +27,24 @@ With out product, you would be able to take a photo of the damages. This will fe
 
 ## Working Principles
 
-### Virtual Environment
+### Running on a container
+
+The prequisites are, that Docker needs to be installed on local computer and should be running
+
+1) Run `docker-compose up road_quality_app``
+
+2) Run `docker build -t road_quality_app . --no-cache`
+
+
+
+### Runnin locally in a Virtual Environment
+
+First, make you virtual environemnt with 
+
+- `python3 m venv .venv`
+
+Install all the required packages to your virutal environment
+
 
 All packages and relevant frameworks are downloaded in the `.venv` virtual environment directory. 
 
