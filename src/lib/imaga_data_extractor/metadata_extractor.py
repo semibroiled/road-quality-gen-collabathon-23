@@ -76,8 +76,10 @@ def extract_metadata(image_path: Path) -> Dict:
         if exif_data:
             for tag, value in exif_data.items():
                 if tag in tag_names:
-                    ##start
-                    if type(value) == dict:
+                   ##start
+                   #removes the binary value from the Latitude
+                   #and Longtitude dict
+                    if(type(value) == dict):
                         original_dict = value
                         del original_dict[5]
                         data[tag_names[tag]] = original_dict
