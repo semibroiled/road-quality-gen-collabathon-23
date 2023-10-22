@@ -1,2 +1,7 @@
 *.DS_Store
 *.csv
+./src/lib/model/protos/
+./src/lib/model/RoadDamageDataset/
+*.tar
+*.xml
+*.xlsx
