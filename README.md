@@ -41,7 +41,13 @@ While all of these aspects themselves work individually, due to time and team co
 
 ## Open Source Technologies being leveraged in this Project
 
-## Working Principles
+- Python 
+- Docker
+- Tensorflow
+- IEEE Big Data Dataset
+- Github 
+
+## Working Principles for Metadata Extraction
 
 ### Running on a container
 
@@ -72,7 +78,7 @@ You can activate this with `source .venv/bin/activate`
  "271": "Camera Make",
  "272": "Camera Model",
  "305": "Software"
-## Packages used for metadata
+#### Packages used for metadata
 from PIL import Image
 import exifread
 
