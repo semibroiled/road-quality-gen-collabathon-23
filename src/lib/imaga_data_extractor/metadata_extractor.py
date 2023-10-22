@@ -52,9 +52,9 @@ def extract_metadata(image_path: Path) -> Dict:
     # Open the image using Pillow
     with Image.open(image_path) as img:
         # Print image information
-        #print("Image Format:", img.format)
-        #print("Image Mode:", img.mode)
-        #print("Image Size:", img.size)
+        # print("Image Format:", img.format)
+        # print("Image Mode:", img.mode)
+        # print("Image Size:", img.size)
 
         # Extract EXIF data
         # 36867: time and date
@@ -76,15 +76,14 @@ def extract_metadata(image_path: Path) -> Dict:
         if exif_data:
             for tag, value in exif_data.items():
                 if tag in tag_names:
-                   ##start
-                    if(type(value) == dict):
+                    ##start
+                    if type(value) == dict:
                         original_dict = value
                         del original_dict[5]
                         data[tag_names[tag]] = original_dict
 
-                    else:  
-                   ##end    
-                     data[tag_names[tag]] = value
+                    else:
+                        ##end
+                        data[tag_names[tag]] = value
 
         return data
-

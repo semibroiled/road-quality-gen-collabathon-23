@@ -1,0 +1,242 @@
+[
+    {
+        "ID": 0,
+        "filename": "./src/images/912B6B3F-A82A-400C-A602-9C9785E68875.jpeg",
+        "Location": null,
+        "Datetime": "2023:10:21 18:33:00",
+        "Camera Make": "Apple",
+        "Camera Model": "iPhone 12",
+        "Firmware": "16.6.1",
+        "DPI": 72.0
+    },
+    {
+        "ID": 1,
+        "filename": "./src/images/0BE21622-0A34-4301-B7AF-B3E6AEDD37D5.jpeg",
+        "Location": null,
+        "Datetime": "2023:10:21 18:29:33",
+        "Camera Make": "Apple",
+        "Camera Model": "iPhone 12",
+        "Firmware": "16.6.1",
+        "DPI": 72.0
+    },
+    {
+        "ID": 2,
+        "filename": "./src/images/A6FBEDA8-5209-4DA2-A8D2-6355E6157966.jpeg",
+        "Location": null,
+        "Datetime": "2023:10:21 18:33:21",
+        "Camera Make": "Apple",
+        "Camera Model": "iPhone 12",
+        "Firmware": "16.6.1",
+        "DPI": 72.0
+    },
+    {
+        "ID": 3,
+        "filename": "./src/images/A13669F4-9F30-4059-BF23-ED96B529A751.jpeg",
+        "Location": null,
+        "Datetime": "2023:10:21 18:41:49",
+        "Camera Make": "Apple",
+        "Camera Model": "iPhone 12",
+        "Firmware": "16.6.1",
+        "DPI": 72.0
+    },
+    {
+        "ID": 4,
+        "filename": "./src/images/884F5529-12B6-41E6-99CC-2D8C90B42547.jpeg",
+        "Location": null,
+        "Datetime": "2023:10:21 18:33:28",
+        "Camera Make": "Apple",
+        "Camera Model": "iPhone 12",
+        "Firmware": "16.6.1",
+        "DPI": 72.0
+    },
+    {
+        "ID": 5,
+        "filename": "./src/images/6D8692DB-D8D9-40B9-81D4-6272D3A9F81D.jpeg",
+        "Location": null,
+        "Datetime": "2023:10:21 18:27:17",
+        "Camera Make": "Apple",
+        "Camera Model": "iPhone 12",
+        "Firmware": "16.6.1",
+        "DPI": 72.0
+    },
+    {
+        "ID": 6,
+        "filename": "./src/images/4ECB648D-B5F2-4498-B313-89AE1A3FCF46.jpeg",
+        "Location": null,
+        "Datetime": "2023:10:21 18:31:33",
+        "Camera Make": "Apple",
+        "Camera Model": "iPhone 12",
+        "Firmware": "16.6.1",
+        "DPI": 72.0
+    },
+    {
+        "ID": 7,
+        "filename": "./src/images/9D95B64C-FD09-4458-AAC9-B708AC6BE28A.jpeg",
+        "Location": null,
+        "Datetime": "2023:10:21 18:41:52",
+        "Camera Make": "Apple",
+        "Camera Model": "iPhone 12",
+        "Firmware": "16.6.1",
+        "DPI": 72.0
+    },
+    {
+        "ID": 8,
+        "filename": "./src/images/001BC8B9-8D28-4701-A664-07BE4FF80372.jpeg",
+        "Location": null,
+        "Datetime": "2023:10:21 18:32:48",
+        "Camera Make": "Apple",
+        "Camera Model": "iPhone 12",
+        "Firmware": "16.6.1",
+        "DPI": 72.0
+    },
+    {
+        "ID": 9,
+        "filename": "./src/images/62774941-A965-4DC8-8376-B88627E3FA33.jpeg",
+        "Location": "N (50.0, 7.0, 7.86) E (8.0, 40.0, 42.61) 108.97225572979494 K 0.0 218.18811040339702 M 218.18811040339702 2023:10:21",
+        "Datetime": "2023:10:21 15:06:41",
+        "Camera Make": "Apple",
+        "Camera Model": "iPhone 14 Pro",
+        "Firmware": "17.0.3",
+        "DPI": 72.0
+    },
+    {
+        "ID": 10,
+        "filename": "./src/images/B7E124F2-E638-4377-B610-153B796EEE2F.jpeg",
+        "Location": null,
+        "Datetime": "2023:10:21 18:42:14",
+        "Camera Make": "Apple",
+        "Camera Model": "iPhone 12",
+        "Firmware": "16.6.1",
+        "DPI": 72.0
+    },
+    {
+        "ID": 11,
+        "filename": "./src/images/9BF4CB67-F2B8-42FA-8BD0-DE7E98040368.jpeg",
+        "Location": null,
+        "Datetime": "2023:10:21 18:29:02",
+        "Camera Make": "Apple",
+        "Camera Model": "iPhone 12",
+        "Firmware": "16.6.1",
+        "DPI": 72.0
+    },
+    {
+        "ID": 12,
+        "filename": "./src/images/2F653FD8-78F8-448C-A54B-B73744CA03F7.jpeg",
+        "Location": null,
+        "Datetime": "2023:10:21 18:26:32",
+        "Camera Make": "Apple",
+        "Camera Model": "iPhone 12",
+        "Firmware": "16.6.1",
+        "DPI": 72.0
+    },
+    {
+        "ID": 13,
+        "filename": "./src/images/E0852CF6-7282-4867-BD27-A0215F28502A.jpeg",
+        "Location": null,
+        "Datetime": "2023:10:21 18:28:02",
+        "Camera Make": "Apple",
+        "Camera Model": "iPhone 12",
+        "Firmware": "16.6.1",
+        "DPI": 72.0
+    },
+    {
+        "ID": 14,
+        "filename": "./src/images/D48F060F-C9B3-4688-9366-630CB6938A90.jpeg",
+        "Location": null,
+        "Datetime": "2023:10:21 18:33:24",
+        "Camera Make": "Apple",
+        "Camera Model": "iPhone 12",
+        "Firmware": "16.6.1",
+        "DPI": 72.0
+    },
+    {
+        "ID": 15,
+        "filename": "./src/images/70CD126A-CF78-42B1-B9A3-F22009B4C49A_1_105_c.jpeg",
+        "Location": null,
+        "Datetime": "2023:10:21 18:42:33",
+        "Camera Make": "Apple",
+        "Camera Model": "iPhone 12",
+        "Firmware": "16.6.1",
+        "DPI": 72.0
+    },
+    {
+        "ID": 16,
+        "filename": "./src/images/FC264349-DC7A-4182-9CA2-7A53CA9B10BF.jpeg",
+        "Location": null,
+        "Datetime": "2023:10:21 18:30:56",
+        "Camera Make": "Apple",
+        "Camera Model": "iPhone 12",
+        "Firmware": "16.6.1",
+        "DPI": 72.0
+    },
+    {
+        "ID": 17,
+        "filename": "./src/images/1BAF11CB-5C7F-466D-ABE6-3A27F308E3DB.jpeg",
+        "Location": null,
+        "Datetime": "2023:10:21 18:41:55",
+        "Camera Make": "Apple",
+        "Camera Model": "iPhone 12",
+        "Firmware": "16.6.1",
+        "DPI": 72.0
+    },
+    {
+        "ID": 18,
+        "filename": "./src/images/A8026684-82B2-4D48-ACEE-2E39CBA6B051.jpeg",
+        "Location": null,
+        "Datetime": "2023:10:21 18:30:31",
+        "Camera Make": "Apple",
+        "Camera Model": "iPhone 12",
+        "Firmware": "16.6.1",
+        "DPI": 72.0
+    },
+    {
+        "ID": 19,
+        "filename": "./src/images/B72D5F1E-CBF0-4A52-8725-8B4B94D27781.jpeg",
+        "Location": null,
+        "Datetime": "2023:10:21 18:30:15",
+        "Camera Make": "Apple",
+        "Camera Model": "iPhone 12",
+        "Firmware": "16.6.1",
+        "DPI": 72.0
+    },
+    {
+        "ID": 20,
+        "filename": "./src/images/453A3691-EF14-44AA-BF5D-7035F498DD60.jpeg",
+        "Location": null,
+        "Datetime": "2023:10:21 18:41:06",
+        "Camera Make": "Apple",
+        "Camera Model": "iPhone 12",
+        "Firmware": "16.6.1",
+        "DPI": 72.0
+    },
+    {
+        "ID": 21,
+        "filename": "./src/images/7E1FA35B-4AD4-4588-A015-ADC5AA85F812.jpeg",
+        "Location": null,
+        "Datetime": "2023:10:21 18:31:47",
+        "Camera Make": "Apple",
+        "Camera Model": "iPhone 12",
+        "Firmware": "16.6.1",
+        "DPI": 72.0
+    },
+    {
+        "ID": 22,
+        "filename": "./src/images/587228CD-72D9-4796-8F79-ACAAE82E440C.jpeg",
+        "Location": null,
+        "Datetime": "2023:10:21 18:31:41",
+        "Camera Make": "Apple",
+        "Camera Model": "iPhone 12",
+        "Firmware": "16.6.1",
+        "DPI": 72.0
+    },
+    {
+        "ID": 23,
+        "filename": "./src/images/88966FEE-FBCE-42F1-AF46-6D1DA5C3B685.jpeg",
+        "Location": null,
+        "Datetime": "2023:10:21 18:31:04",
+        "Camera Make": "Apple",
+        "Camera Model": "iPhone 12",
+        "Firmware": "16.6.1",
+        "DPI": 72.0
+    }
+]

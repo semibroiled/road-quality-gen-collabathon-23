@@ -23,7 +23,7 @@ if __name__ == "__main__":
     try:
         print("Extracting Metadata ⛭⛭⛭")
         for index, file_path in enumerate(file_paths):
-            print(file_path)
+            #print(file_path)
             metadata_collector[index] = extract_metadata(file_path)
         print("Extracted Metadata ✅")
     except:
@@ -31,29 +31,29 @@ if __name__ == "__main__":
         print("Put a Logger here later. We got some errors 🤡")
         pass
 
-    print(metadata_collector)  # TODO: Remove later
-    main()
+    #print(metadata_collector)  # TODO: Remove later
+    #main()
 
     # Save metadata as datasets
     try:
         print("Saving dataset as json ⛭⛭⛭")
         save_as_json(metadata_collector)
+        print("Saved to a json file in Path(./data/) ✅")
 
-    except:
+    except Exception as e:
         # TODO Logger and exception cather here
         print("Put a Logger here later. We got some errors 🤡")
+        print(e)
         pass
-
-    print("Saved to a json file in Path(./data/) ✅")
 
     try:
         print("Saving dataset as csv ⛭⛭⛭")
         save_as_csv(metadata_collector)
-    except:
+        print("Saved to a csv file in Path(./data/) ✅")
+    except Exception as e:
         # TODO Logger and exception cather here
         print("Put a Logger here later. We got some errors 🤡")
+        print(e)
         pass
-
-    print("Saved to a csv file in Path(./data/) ✅")
 
     print("Exiting code ❣️")
